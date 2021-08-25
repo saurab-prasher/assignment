@@ -1,0 +1,20 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10rem;
+}
+
+.navMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navItem {
+  padding: 2.4rem;
+}
+
+.navLink {
+  font-size: 1.6rem;
+}

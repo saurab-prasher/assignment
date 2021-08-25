@@ -1,0 +1,33 @@
+.sectionSample {
+  background-color: gainsboro;
+}
+
+.sectionSampleInner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  grid-gap: 9.6rem;
+  padding: 8rem 3.2rem;
+}
+
+.sampleForm {
+  background-color: #fff;
+}
+
+.formImg {
+  max-width: 100%;
+
+  border-bottom-right-radius: 10%;
+  border-bottom-left-radius: 10%;
+}
+
+.sampleForm {
+  padding: 1.6rem;
+  border-radius: 8px;
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}

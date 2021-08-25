@@ -1,0 +1,30 @@
+.featuresSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 2.4rem;
+  padding-bottom: 9.6rem;
+}
+
+.featuresCard {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  align-items: flex-start;
+}
+
+.cardHeading {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.cardIcon {
+  height: 2.4rem;
+  width: 2.4rem;
+  transform: scale(1.5);
+  margin-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+.cardDescription {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}

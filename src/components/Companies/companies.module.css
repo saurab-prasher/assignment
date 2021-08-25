@@ -1,0 +1,11 @@
+.companiesSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  align-items: center;
+  grid-gap: 6.4rem;
+  padding: 2.4rem 3.2rem;
+}
+
+.companiesSection img {
+  filter: brightness(0.7);
+}
