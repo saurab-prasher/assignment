@@ -35,7 +35,8 @@
   }
 }
 
-.headerBtn {
+.logoContainer {
+  cursor: pointer;
 }
 
 .navItem {

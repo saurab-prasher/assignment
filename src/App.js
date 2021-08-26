@@ -1,25 +1,20 @@
+import { Route, Switch } from 'react-router-dom';
 import './index.css';
 import Header from './components/Header';
-import Hero from './components/Hero';
-import Features from './components/Features';
-import Companies from './components/Companies';
-import Sample from './components/Sample';
+
 import Footer from './components/Footer';
-import Experience from './components/Experience';
 import Pricing from './components/Pricing';
-import Clients from './components/Clients';
+// pages
+import Home from './pages';
 
 function App() {
   return (
     <>
       <Header />
-      <Hero />
-      <Features />
-      <Companies />
-      <Sample />
-      <Experience />
-      <Pricing />
-      <Clients />
+      <Switch>
+        <Route exact path='/' component={Home} />
+        <Route path='/buynow' component={Pricing} />
+      </Switch>
       <Footer />
     </>
   );

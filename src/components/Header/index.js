@@ -7,16 +7,21 @@ import {
   navLink,
   hamburger,
   headerBtn,
+  logoContainer,
 } from './header.module.css';
+import { Link, useLocation } from 'react-router-dom';
 
-import { Link } from 'react-router-dom';
 import { GiHamburgerMenu } from 'react-icons/gi';
 
 const Index = () => {
+  const { pathname: location } = useLocation();
+
   return (
     <header className={`${header} container`}>
-      <div className='logo-container'>
-        <Logo />
+      <div className={logoContainer}>
+        <Link to='/'>
+          <Logo />
+        </Link>
       </div>
       <nav className='navbar'>
         <ul className={navMenu}>
@@ -43,9 +48,15 @@ const Index = () => {
         </ul>
       </nav>
       <div className={headerBtn}>
-        <Link to='/buynow' className='btn btn--primary'>
-          Buy Now
-        </Link>
+        {location === '/buynow' ? (
+          <Link to='/' className='btn btn--primary'>
+            back home
+          </Link>
+        ) : (
+          <Link to='/buynow' className='btn btn--primary'>
+            Buy Now
+          </Link>
+        )}
       </div>
 
       <GiHamburgerMenu className={hamburger} />
