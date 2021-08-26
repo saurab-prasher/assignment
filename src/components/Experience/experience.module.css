@@ -1,0 +1,70 @@
+.sectionExperience {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 6.4rem;
+  padding: 12.8rem 0;
+}
+
+@media (max-width: 37.5em) {
+  .sectionExperience {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.textContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.textContent h2 {
+  line-height: 1.4;
+}
+
+.textContent h2 span {
+  color: #0d6efd;
+}
+
+.imgContent {
+  perspective-origin: 0;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.imgContent img {
+  transform: rotateY(-35deg) rotateX(15deg);
+  border-radius: 0.625rem;
+}
+
+@media (max-width: 48em) {
+  .imgContent img {
+    transform: rotateY(0) rotateX(0);
+  }
+}
+
+.icon {
+  display: flex;
+  gap: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+.icon div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.cardHeading {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.cardIcon {
+  height: 2.4rem;
+  width: 2.4rem;
+  transform: scale(1.5);
+  margin-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+.cardDescription {
+  font-size: 1.4rem;
+  color: #869ab8;
+  line-height: 1.6;
+}

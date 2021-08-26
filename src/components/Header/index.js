@@ -1,6 +1,16 @@
 import React from 'react';
 import { ReactComponent as Logo } from '../../assests/images/logo/logo.svg';
-import { header, navMenu, navItem, navLink } from './header.module.css';
+import {
+  header,
+  navMenu,
+  navItem,
+  navLink,
+  hamburger,
+  headerBtn,
+} from './header.module.css';
+
+import { Link } from 'react-router-dom';
+import { GiHamburgerMenu } from 'react-icons/gi';
 
 const Index = () => {
   return (
@@ -32,12 +42,13 @@ const Index = () => {
           </li>
         </ul>
       </nav>
-
-      <div className='header-btn'>
-        <a href='#a' className='btn btn--primary'>
+      <div className={headerBtn}>
+        <Link to='/buynow' className='btn btn--primary'>
           Buy Now
-        </a>
+        </Link>
       </div>
+
+      <GiHamburgerMenu className={hamburger} />
     </header>
   );
 };

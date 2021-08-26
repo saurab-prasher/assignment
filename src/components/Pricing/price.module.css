@@ -1,0 +1,182 @@
+.sectionPricing {
+  background-color: #f1f4f8;
+  padding: 9.6rem 0;
+}
+
+.business {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.4rem;
+}
+
+@media (max-width: 37.5em) {
+  .business {
+    grid-template-columns: 1fr;
+    gap: 6.4rem;
+  }
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.stats div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.stats h4 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+.stats p {
+  font-size: 1.6rem;
+  color: #869ab8;
+  letter-spacing: 0.5px;
+}
+
+.pricing {
+  padding: 9.6rem 0;
+}
+.pricingHeading {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+
+  width: 75%;
+  margin: 0 auto;
+  align-items: center;
+}
+.pricingForm {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.pricingForm span {
+  font-size: 1.6rem;
+}
+
+.pricingCard {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  margin: 4.8rem 0;
+}
+
+@media (max-width: 37.5em) {
+  .pricingCard {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.package {
+  padding: 0.6rem;
+  background-color: #eaeefd;
+  display: inline-block;
+  border-radius: 100px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.pricingCardInner {
+  padding: 3.2rem;
+  padding-bottom: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 2.4rem;
+}
+.pricingCardPrimary {
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.6rem;
+  z-index: 1;
+
+  box-shadow: 0 1.5rem 4rem rgba(22, 28, 45, 0.1) !important;
+}
+.checkmark {
+  padding: 0.6rem;
+  background-color: #ecf8ec;
+  color: green;
+  border-radius: 50%;
+}
+
+.monthlyPrice {
+  font-size: 1.6rem;
+}
+.cta {
+  width: 100%;
+  display: block;
+  color: #fff;
+  background-color: #335eea;
+  font-size: 1.6rem;
+  padding: 2rem;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.monthlyPrice span {
+  font-size: 4.8rem;
+}
+.pricingCardSecondary {
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: scale(0.9) translateX(-4rem);
+  box-shadow: 0 1.5rem 4rem rgba(22, 28, 45, 0.1) !important;
+}
+
+@media (max-width: 37.5em) {
+  .pricingCard {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 4.8rem;
+  }
+
+  .pricingCardSecondary {
+    transform: scale(1) translateX(0rem);
+  }
+}
+
+.pricingCardSecondary .pricingCardInner {
+  padding-left: 4.8rem;
+}
+.pricingCardSecondary p {
+  margin: 8rem 0;
+}
+.pricingCardSecondary a {
+  background-color: #d9e2ef;
+  color: #869ab8;
+}
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  margin: 3.2rem 0;
+}
+.features div {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.features div p {
+  font-size: 1.8rem;
+}

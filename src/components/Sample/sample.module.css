@@ -1,13 +1,27 @@
 .sectionSample {
-  background-color: gainsboro;
+  background-color: #f9fbfd;
 }
 
 .sectionSampleInner {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 2fr;
   align-items: center;
-  grid-gap: 9.6rem;
-  padding: 8rem 3.2rem;
+  justify-items: center;
+  grid-gap: 2.4rem;
+  padding: 12.8rem 3.2rem;
+}
+
+@media (max-width: 48em) {
+  .sectionSampleInner {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .sectionSampleInner {
+    grid-template-columns: 1fr;
+    grid-gap: 6.4rem;
+  }
 }
 
 .sampleForm {
@@ -16,18 +30,62 @@
 
 .formImg {
   max-width: 100%;
-
-  border-bottom-right-radius: 10%;
-  border-bottom-left-radius: 10%;
 }
 
-.sampleForm {
-  padding: 1.6rem;
-  border-radius: 8px;
+.sampleForm form {
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
 }
 
+.sampleForm form input {
+  border: none;
+  padding: 1.2rem;
+  border-bottom: 1px solid #eee;
+  width: 100%;
+  font-family: inherit;
+}
+
+.sampleForm form button {
+  background-color: #389e80;
+  width: 100%;
+  padding: 1.8rem;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.6rem;
+  display: inline-block;
+  margin: 2.4rem 0;
+  margin-bottom: 0;
+  cursor: pointer;
+}
 .textContent {
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 2.4rem;
+  margin-top: 2.4rem;
+}
+
+.features div {
+  display: flex;
+  gap: 1.6rem;
+  color: #389e80;
+  font-size: 1.4rem;
+  align-items: center;
+}
+
+.checkmark {
+  padding: 0.6rem;
+  background-color: #ecf8ec;
+  color: green;
+  border-radius: 50%;
 }

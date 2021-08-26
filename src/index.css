@@ -1,39 +1,4 @@
-:root {
-  --bs-blue: #0d6efd;
-  --bs-indigo: #6610f2;
-  --bs-purple: #6f42c1;
-  --bs-pink: #d63384;
-  --bs-red: #dc3545;
-  --bs-orange: #fd7e14;
-  --bs-yellow: #ffc107;
-  --bs-green: #198754;
-  --bs-teal: #20c997;
-  --bs-cyan: #0dcaf0;
-  --bs-gray: #869ab8;
-  --bs-gray-dark: #384c74;
-  --bs-primary: #335eea;
-  --bs-secondary: #506690;
-  --bs-success: #42ba96;
-  --bs-info: #7c69ef;
-  --bs-warning: #fad776;
-  --bs-danger: #df4759;
-  --bs-light: #f9fbfd;
-  --bs-dark: #1b2a4e;
-  --bs-primary-desat: #6c8aec;
-  --bs-black: #161c2d;
-  --bs-white: #fff;
-  --bs-font-sans-serif: system-ui, -apple-system, 'Segoe UI', Roboto,
-    'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
-    'Liberation Mono', 'Courier New', monospace;
-  --bs-gradient: linear-gradient(
-    180deg,
-    hsla(0, 0%, 100%, 0.15),
-    hsla(0, 0%, 100%, 0)
-  );
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -45,10 +10,28 @@ html {
   font-size: 62.5%;
 }
 
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+}
+@media screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media screen and (min-width: 112.5em) {
+  html {
+    font-size: 70%;
+  }
+}
+
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1;
@@ -85,15 +68,18 @@ button {
 
 .heading-secondary {
   font-size: 3.2rem;
+  font-weight: 500;
 }
 
 .heading-tertiary {
   font-size: 2.4rem;
+  font-weight: 500;
 }
 
 .description {
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 1.5;
+  color: #869ab8;
 }
 
 .btn,
@@ -105,13 +91,64 @@ button {
   font-size: 1.6rem;
 }
 .btn--primary {
-  background-color: var(--bs-blue);
+  background-color: #335eea;
 }
 
 .btn--secondary {
-  background-color: red;
+  background-color: #506690;
 }
 
 .btn--tertiary {
-  background-color: gray;
+  background-color: #869ab8;
+}
+
+.toggle-switch {
+  margin: 1rem 1.5rem;
+}
+.toggle-switch .switch {
+  position: relative;
+  display: inline-block;
+  width: 4rem;
+  height: 2rem;
+}
+.toggle-switch .switch input {
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+.toggle-switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2196f3;
+  transition: 0.4s;
+}
+.toggle-switch .slider:before {
+  position: absolute;
+  content: '';
+  height: 1.3rem;
+  width: 1.3rem;
+  left: 4px;
+  bottom: 4px;
+  background-color: #fff;
+  transition: 0.3s;
+}
+.toggle-switch .slider.round {
+  border-radius: 3.4rem;
+}
+.toggle-switch .slider.round::before {
+  border-radius: 50%;
+}
+.toggle-switch input:checked + .slider {
+  background: #fff;
+}
+.toggle-switch input:checked + .slider::before {
+  transform: translateX(2rem);
+  background-color: #2196f3;
+}
+.toggle-switch input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
 }

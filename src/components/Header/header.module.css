@@ -11,10 +11,38 @@
   justify-content: space-between;
 }
 
+@media (max-width: 48em) {
+  .navMenu {
+    display: none;
+  }
+}
+
+.hamburger {
+  display: none;
+  height: 3.2rem;
+  width: 3.2rem;
+}
+
+@media (max-width: 48em) {
+  .hamburger {
+    display: block;
+  }
+}
+
+@media (max-width: 48em) {
+  .headerBtn {
+    display: none;
+  }
+}
+
+.headerBtn {
+}
+
 .navItem {
   padding: 2.4rem;
 }
 
 .navLink {
   font-size: 1.6rem;
+  color: #384c74;
 }

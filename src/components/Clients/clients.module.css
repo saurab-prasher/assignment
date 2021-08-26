@@ -1,0 +1,86 @@
+.sectionClients {
+  background-color: #1b2a4e;
+  margin-top: -45rem;
+}
+
+.sectionInner {
+  padding-top: 30rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 1.6rem;
+}
+
+.gridItem {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  margin: 2.4rem 0;
+}
+
+.icon {
+  padding: 0.6rem;
+  background-color: #42ba96;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  color: #7a8ead;
+}
+
+.textContent h4 {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.textContent p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.getStartNow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+
+  gap: 2.4rem;
+  padding: 6.4rem 0;
+  padding-bottom: 9.6rem;
+}
+
+.getStartNow h2 {
+  font-weight: 500;
+  color: #fff;
+}
+.getStartNow p {
+  font-size: 1.8rem;
+  color: #7a8ead;
+  line-height: 1.6;
+}
+
+.getStartNow a {
+  background-color: #42ba96;
+  color: #fff;
+  display: inline-block;
+  padding: 1.6rem 2.4rem;
+  border-radius: 5px;
+  font-size: 1.6rem;
+}
+
+@media (max-width: 37.5em) {
+  .sectionInner {
+    grid-template-columns: 1fr;
+  }
+
+  .getStartNow {
+    width: 100%;
+  }
+}

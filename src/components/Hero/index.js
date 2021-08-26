@@ -7,7 +7,7 @@ const Index = () => {
     <main className={`${styles.heroSection} container`}>
       <div className={styles.textContent}>
         <h1 className='heading-primary'>
-          Welcome to Landkit. Develop anything.
+          Welcome to <span>Landkit</span>. Develop anything.
         </h1>
         <p className='description'>
           Build a beautiful, modern website with flexible Bootstrap components

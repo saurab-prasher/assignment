@@ -3,13 +3,22 @@
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   grid-gap: 2.4rem;
-  padding: 12.8rem 1rem;
+  padding: 12.8rem 3.2rem;
 }
 
+@media (max-width: 48em) {
+  .heroSection {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .textContent {
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
+}
+
+.textContent h1 span {
+  color: #0d6efd;
 }
 
 .btnContainer {

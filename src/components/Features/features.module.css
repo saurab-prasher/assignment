@@ -13,7 +13,7 @@
 }
 
 .cardHeading {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 500;
 }
 
@@ -26,5 +26,6 @@
 }
 .cardDescription {
   font-size: 1.6rem;
+  color: #869ab8;
   line-height: 1.6;
 }

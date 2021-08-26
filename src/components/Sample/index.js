@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './sample.module.css';
 import formImg from '../../assests/images/form-img.jpg';
+import { AiOutlineCheck } from 'react-icons/ai';
 
 const Index = () => {
   return (
@@ -25,7 +26,7 @@ const Index = () => {
               <input required type='password' placeholder='Password' />
             </div>
 
-            <button className='btn btn--primary'>Download a sample</button>
+            <button>Download a sample</button>
           </form>
         </div>
 
@@ -41,7 +42,33 @@ const Index = () => {
             make your life easier.
           </p>
 
-          <div className='div'> &check; Liftime updates</div>
+          <div className={styles.features}>
+            <div>
+              <div className={styles.checkmark}>
+                <AiOutlineCheck />
+              </div>
+              <p>Lifetime updates</p>
+            </div>
+
+            <div>
+              <div className={styles.checkmark}>
+                <AiOutlineCheck />
+              </div>
+              <p>Tons of assests</p>
+            </div>
+            <div>
+              <div className={styles.checkmark}>
+                <AiOutlineCheck />
+              </div>
+              <p>Tech support</p>
+            </div>
+            <div>
+              <div className={styles.checkmark}>
+                <AiOutlineCheck />
+              </div>
+              <p>Integration ready</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
